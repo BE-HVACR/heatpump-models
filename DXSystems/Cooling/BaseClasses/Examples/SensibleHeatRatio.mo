@@ -21,8 +21,8 @@ model SensibleHeatRatio "Test model for SensibleHeatRatio"
     height=-5,
     offset=273.15 + 29) "Inlet air temperature"
     annotation (Placement(transformation(extent={{-80,70},{-60,90}})));
-  DXSystems.Cooling.BaseClasses.SensibleHeatRatio shr(redeclare package Medium
-      = Medium)
+  DXSystems.Cooling.BaseClasses.SensibleHeatRatio shr(redeclare package Medium =
+        Medium)
     annotation (Placement(transformation(extent={{20,-10},{40,10}})));
   Modelica.Blocks.Sources.Constant XADP(k=0.01) "Mass fraction"
     annotation (Placement(transformation(extent={{-80,-50},{-60,-30}})));

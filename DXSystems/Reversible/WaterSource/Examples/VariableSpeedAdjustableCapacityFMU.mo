@@ -105,14 +105,14 @@ model VariableSpeedAdjustableCapacityFMU
   Modelica.Blocks.Interfaces.RealInput TSou_in
     "Prescribed boundary temperature"
     annotation (Placement(transformation(extent={{-140,-90},{-100,-50}})));
-  Buildings.Fluid.Sensors.TemperatureTwoPort TSouLvg(redeclare package Medium
-      = MediumWater, m_flow_nominal=m_flow_nominal) annotation (Placement(
+  Buildings.Fluid.Sensors.TemperatureTwoPort TSouLvg(redeclare package Medium =
+        MediumWater, m_flow_nominal=m_flow_nominal) annotation (Placement(
         transformation(
         extent={{10,-10},{-10,10}},
         rotation=0,
         origin={-30,-30})));
-  Buildings.Fluid.Sensors.TemperatureTwoPort TLoaLvg(redeclare package Medium
-      = MediumAir, m_flow_nominal=m_flow_nominal) annotation (Placement(
+  Buildings.Fluid.Sensors.TemperatureTwoPort TLoaLvg(redeclare package Medium =
+        MediumAir, m_flow_nominal=m_flow_nominal) annotation (Placement(
         transformation(
         extent={{-10,-10},{10,10}},
         rotation=0,
